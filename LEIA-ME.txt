@@ -1,0 +1,36 @@
+CONVERSOR PARA MARKDOWN — SISCONNECT
+=====================================
+
+O que faz: converte arquivos Word, PDF, Excel, PowerPoint (e outros)
+para o formato .md (Markdown). Tudo roda no seu computador —
+nenhum arquivo é enviado para a internet.
+
+COMO USAR (Windows)
+-------------------
+1. Coloque os dois arquivos na mesma pasta:
+   - Conversor-Markdown.bat
+   - conversor_md.py
+
+2. Dê dois cliques em "Conversor-Markdown.bat".
+   (Na PRIMEIRA vez pode demorar ~1 minuto: ele instala
+   sozinho o que precisa. Das próximas vezes abre na hora.)
+
+3. Na janela que abrir:
+   - Clique em "Escolher arquivos..." (ou "Escolher pasta inteira..."
+     para converter tudo de uma vez)
+   - Se quiser, escolha uma pasta de destino
+     (senão o .md fica junto do arquivo original)
+   - Clique em CONVERTER
+
+4. Pronto. Os arquivos .md aparecem com o mesmo nome dos originais.
+
+SE DER ERRO "PYTHON NAO ENCONTRADO"
+-----------------------------------
+Instale o Python em: https://www.python.org/downloads/
+Na tela de instalação, MARQUE a caixinha "Add Python to PATH".
+Depois rode o .bat de novo.
+
+Formatos aceitos: docx, doc, pdf, xlsx, xls, pptx, ppt, html,
+csv, json, xml, txt, epub, msg, rtf, odt.
+
+Dúvidas: falar com a TI (SisConnect).
