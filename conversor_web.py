@@ -140,16 +140,19 @@ if converter:
         # ============================================================
         
         st.divider()
-        st.subheader(f"📊 Resultado: {sucesso} convertido(s), {falha} com erro")
+        st.subheader(f"Resultado: {sucesso} convertido(s), {falha} com erro")
         
         for res in resultados:
             with st.expander(f"{res['status']} — {res['nome']}"):
                 if res["conteudo"]:
+                    # Remove a extensão original (.pdf, .docx, etc.)
+                    nome_sem_extensao = Path(res['nome']).stem
+                    
                     st.text_area("Conteúdo Markdown:", res["conteudo"], height=200)
                     st.download_button(
-                        label=f"📥 Baixar {res['nome']}.md",
+                        label=f"📥 Baixar {nome_sem_extensao}.md",
                         data=res["conteudo"],
-                        file_name=f"{res['nome']}.md",
+                        file_name=f"{nome_sem_extensao}.md",
                         mime="text/markdown",
                         key=f"download_{res['nome']}"
                     )
