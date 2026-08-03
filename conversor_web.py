@@ -32,9 +32,9 @@ st.title("📄 Conversor para Markdown — SisConnect")
 st.markdown("""
 Converte **DOCX, PDF, XLSX, PPTX, HTML, CSV** e outros formatos para **.md**
 
-✅ Roda 100% no seu navegador  
-🔒 Nenhum dado sai do seu computador  
-🚀 Gratuito e sem necessidade de instalação
+ Roda 100% no seu navegador  
+ Nenhum dado sai do seu computador  
+ Gratuito e sem necessidade de instalação
 """)
 
 st.divider()
